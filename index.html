@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>API Testing Page</title>
+  </head>
+  <body>
+    <h1>Fetch All Users</h1>
+    <form action="scripts/routes.php" method="post" target="_blank">
+    Request <input type="text" name="req" value="get-all" readonly/><br>
+    <input type="submit" value="Get"/>
+    </form>
+
+    <h1>Fetch Users by Email</h1>
+    <form action="scripts/routes.php" method="post" target="_blank">
+    Request <input type="text" name="req" value="get-email" readonly/><br>
+    Email <input type="email" name="email" required/><br>
+    <input type="submit" value="Get"/>
+    </form>
+
+    <h1>Fetch User By ID</h1>
+    <form action="scripts/routes.php" method="post" target="_blank">
+    Request <input type="text" name="req" value="get-id" readonly/><br>
+    Email <input type="text" name="id" required/><br>
+    <input type="submit" value="Get"/>
+    </form>
+
+    <h1>Create New User</h1>
+    <form action="scripts/routes.php" method="post" target="_blank">
+    Request <input type="text" name="req" value="create" readonly/><br>
+    Name <input type="text" name="name" required/><br>
+    Email <input type="email" name="email" required/><br>
+    Password <input type="text" name="password" required/><br>
+    <input type="submit" value="Create"/>
+    </form>
+
+    <h1>Update an Existing User</h1>
+    <form action="scripts/routes.php" method="post" target="_blank">
+    Request <input type="text" name="req" value="update" readonly/><br>
+    ID <input type="text" name="id" required/><br>
+    Name <input type="text" name="name" required/><br>
+    Email <input type="email" name="email" required/><br>
+    Password <input type="text" name="password"/><br>
+    <input type="submit" value="Update"/>
+    </form>
+
+    <h1>Delete a User</h1>
+    <form action="scripts/routes.php" method="post" target="_blank">
+    Request <input type="text" name="req" value="delete" readonly/><br>
+    ID <input type="text" name="id" required/>
+    <input type="submit" value="Delete"/>
+    </form>
+  </body>
+</html>
